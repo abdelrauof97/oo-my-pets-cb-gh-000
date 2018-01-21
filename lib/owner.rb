@@ -41,6 +41,12 @@ class Owner
     @pets.each { |k,v| v << dog if k == :dogs }
   end
   
+  def walk_dogs
+    
+  end 
+  
+  def 
+  
 end
 
 
