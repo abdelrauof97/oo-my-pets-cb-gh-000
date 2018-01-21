@@ -53,6 +53,10 @@ class Owner
     @pets.each { |k,v| v.each{|x| x.mood = "happy"} if k == :fishes }
   end
   
+  def sell_pets
+    @pets
+  end
+  
 end
 
 
