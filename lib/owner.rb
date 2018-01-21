@@ -58,7 +58,7 @@ class Owner
       v.each{|x| x.mood = "nervous"
       
       }
-      
+      v.clear
     }
   end
   
