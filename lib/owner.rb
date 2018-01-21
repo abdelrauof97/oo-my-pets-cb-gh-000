@@ -43,9 +43,9 @@ class Owner
   
   def walk_dogs
     @pets.each { |k,V| 
-      if k == :dogs 
+     # if k == :dogs 
        # v.each {|x| x.mood = "happy"}
-      end
+     # end
     }
   end 
   
