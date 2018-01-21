@@ -45,7 +45,7 @@ class Owner
     @pets.each { |k,v| v.each{|x| x.mood = "happy"} if k == :dogs }
   end 
   
-  def pleay_with_cats
+  def play_with_cats
     @pets.each { |k,v| v.each{|x| x.mood = "happy"} if k == :cats }
   end 
   
