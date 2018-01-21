@@ -42,7 +42,7 @@ class Owner
   end
   
   def walk_dogs
-    
+    @pets { |k,v|
   end 
   
   def pleay_with_cats
