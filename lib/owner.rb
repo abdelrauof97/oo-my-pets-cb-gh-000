@@ -57,6 +57,10 @@ class Owner
     @pets.each { |k,v| v.each{|x| x.mood = "nervous" } }
   end
   
+  def list_pets 
+    
+  end
+  
 end
 
 
