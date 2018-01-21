@@ -50,7 +50,7 @@ class Owner
   end 
   
   def feed_fish
-    @pets.each { |k,v| v.each{|x| x.mood = "happy"} if k == :fish }
+    @pets.each { |k,v| v.each{|x| x.mood = "happy"} if k == :fishes }
   end
   
 end
