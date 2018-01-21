@@ -1,3 +1,66 @@
 class Owner
-  # code goes here
+  
+  attr_accessor :name
+  attr_reader :species, :pets
+  @@all = []
+  
+  def initialize(species)
+    @species = species
+    self.class.all << self
+    @pets = {fishes: [], cats: [], dogs: []}
+  end
+  
+  def self.all 
+    @@all 
+  end
+  
+  def self.count
+    self.all.length
+  end
+  
+  def self.reset_all
+    self.all.clear
+  end
+  
+  def say_species
+    "I am a #{@species}."
+  end
+  
+  def buy_fish(fish_name)
+    fish = Fish.new(fish_name)
+    @pets.each { |k,v| v << fish if k == :fishes }
+  end
+  
+  def buy_cat(cat_name)
+    cat = Cat.new(cat_name)
+    @pets.each { |k,v| v << cat if k == :cats }
+  end
+
+  def buy_dog(dog_name)
+    dog = Dog.new(dog_name)
+    @pets.each { |k,v| v << dog if k == :dogs }
+  end
+  
 end
+
+
+
+# learn spec/owner_spec.rb --fail-fast
+
+# ruby lib/owner.rb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
