@@ -46,11 +46,11 @@ class Owner
   end 
   
   def pleay_with_cats
-    @pets.each { |k,v| v.each{|x| x.mood = "happy"} if k == :dogs }
+    @pets.each { |k,v| v.each{|x| x.mood = "happy"} if k == :cats }
   end 
   
   def feed_fish
-    
+    @pets.each { |k,v| v.each{|x| x.mood = "happy"} if k == :fish }
   end
   
 end
